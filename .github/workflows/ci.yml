@@ -20,6 +20,6 @@ jobs:
     - name: Restore the packages
       run: dotnet restore
     - name: Build the solution
-      run: dotnet build --configuration Release --no-restore
-    - name: Run All Tests
-      run: dotnet test --configuration Release --no-restore
+      run: dotnet build --no-restore
+    - name: Run all tests
+      run: dotnet test --no build --verbosity normal
